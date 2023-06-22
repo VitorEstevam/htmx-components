@@ -1,0 +1,23 @@
+<div id="newDish">
+    <h2>Request a new dish</h2>
+    <form hx-post="/newDish" hx-target="#newDish">
+        <label>
+            Dish name
+            <input id="name" name="name" type="text">
+        </label>
+        <label>
+            Description
+            <input id="description" name="description" type="text">
+        </label>
+        <label>
+            Price
+            <input id="price" name="price" type="number">
+        </label>
+        <label>
+            Category
+            <input id="category" name="category" type="text">
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

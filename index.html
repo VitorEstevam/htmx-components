@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@1.9.2"
+        integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header style="height: 100px; display: flex; align-items: center; justify-content: space-between;">
+        <a href="/">
+            <h2>Restaurant</h2>
+        </a>
+        <div class="header-right" style="float: right;">
+            <a hx-get="/listMenu" hx-target="#target">See Menu</a> |
+            <a hx-get="/newDish" hx-target="#target">Request a new Dish</a>
+        </div>
+    </header>
+
+    <div id="target">
+    </div>
+</body>
+
+</html>
